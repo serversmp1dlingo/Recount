@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jejak Perjalanan Waktu — Chapter 3: Recount Text (Retelling Past Events) | Kelas IX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Literata:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F1E7D4;
+  --paper-dark:#E4D6B8;
+  --paper-darker:#D8C6A0;
+  --ink:#22314A;
+  --ink-soft:#4A5A78;
+  --teal:#2F6F6E;
+  --teal-dark:#1F4B4C;
+  --gold:#C99A3E;
+  --stamp:#A8442D;
+  --success:#3F7D53;
+  --error:#B0453A;
+  --radius:14px;
+  --shadow:0 6px 18px rgba(34,49,74,0.14);
+  --font-display:'Special Elite', monospace;
+  --font-body:'Literata', serif;
+  --font-ui:'Inter', sans-serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 10% 5%, rgba(255,255,255,0.35), transparent 40%),
+    var(--paper);
+  color:var(--ink);
+  font-family:var(--font-body);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+}
+a{color:var(--teal-dark);}
+h1,h2,h3{font-family:var(--font-display); letter-spacing:0.3px; margin:0 0 0.4em;}
+.eyebrow{
+  font-family:var(--font-display);
+  font-size:0.72rem;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--stamp);
+}
+button{font-family:var(--font-ui); cursor:pointer;}
+:focus-visible{outline:3px solid var(--gold); outline-offset:2px;}
+
+/* ===== HEADER ===== */
+header.site-header{
+  position:sticky; top:0; z-index:50;
+  background:var(--ink);
+  color:var(--paper);
+  box-shadow:var(--shadow);
+}
+.header-top{
+  max-width:1100px; margin:0 auto;
+  padding:14px 20px 6px;
+  display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+}
+.stamp-logo{
+  width:52px; height:52px; flex-shrink:0;
+  border:2px solid var(--gold); border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-size:1.4rem; color:var(--gold);
+  transform:rotate(-8deg);
+}
+.header-title h1{font-size:1.25rem; margin:0; color:#fff;}
+.header-title .eyebrow{color:var(--gold);}
+#a11y-toggle{
+  margin-left:auto;
+  background:transparent; border:1.5px solid var(--paper-dark);
+  color:var(--paper); border-radius:20px; padding:6px 14px;
+  font-size:0.8rem;
+}
+#a11y-toggle:hover{background:rgba(255,255,255,0.1);}
+nav.route{
+  max-width:1100px; margin:0 auto;
+  display:flex; gap:4px; overflow-x:auto;
+  padding:6px 20px 10px;
+  scrollbar-width:thin;
+}
+nav.route a{
+  flex:0 0 auto;
+  text-decoration:none; color:var(--paper-dark);
+  font-family:var(--font-ui); font-size:0.8rem; font-weight:600;
+  padding:8px 12px; border-radius:20px; white-space:nowrap;
+  display:flex; align-items:center; gap:6px;
+  border:1px solid transparent;
+}
+nav.route a:hover{border-color:var(--gold); color:#fff;}
+nav.route a .dot{
+  width:9px; height:9px; border-radius:50%;
+  background:rgba(255,255,255,0.25); display:inline-block;
+  transition:transform 0.3s ease, background 0.3s ease;
+}
+nav.route a.visited .dot{background:var(--gold); transform:scale(1.25);}
+nav.route a.active{background:rgba(255,255,255,0.12); color:#fff;}
+
+/* ===== LAYOUT / JOURNAL PAGES ===== */
+main{max-width:960px; margin:0 auto; padding:28px 18px 60px; position:relative;}
+.route-line{
+  position:absolute; left:34px; top:0; bottom:0; width:2px;
+  background-image:repeating-linear-gradient(to bottom, var(--ink-soft) 0 6px, transparent 6px 14px);
+  opacity:0.35; display:none;
+}
+@media(min-width:760px){ .route-line{display:block;} main{padding-left:70px;} }
+
+.page{
+  background:var(--paper-dark);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:28px 26px;
+  margin-bottom:34px;
+  position:relative;
+  border:1px solid rgba(34,49,74,0.08);
+  scroll-margin-top:120px;
+}
+.page::before{
+  content:"";
+  position:absolute; top:-10px; left:26px; width:70px; height:22px;
+  background:rgba(201,154,62,0.55);
+  transform:rotate(-3deg);
+  box-shadow:0 2px 4px rgba(0,0,0,0.15);
+}
+.tag{
+  display:inline-flex; align-items:center; gap:6px;
+  background:var(--teal); color:#fff; font-family:var(--font-ui);
+  font-weight:600; font-size:0.75rem; padding:4px 12px; border-radius:20px;
+  margin-bottom:10px;
+}
+
+/* ===== HERO / APERSEPSI ===== */
+.hero-grid{display:grid; gap:20px;}
+@media(min-width:700px){ .hero-grid{grid-template-columns:1.1fr 0.9fr; align-items:center;} }
+.hero-question{
+  background:var(--paper); border-left:5px solid var(--stamp);
+  padding:16px 18px; border-radius:8px; font-style:italic;
+  font-family:var(--font-body); margin:14px 0;
+}
+svg.illustration{width:100%; height:auto; max-width:340px;}
+.identity-box{
+  font-family:var(--font-ui); font-size:0.82rem; color:var(--ink-soft);
+  background:var(--paper); border-radius:10px; padding:12px 16px; margin-top:16px;
+  display:grid; grid-template-columns:1fr 1fr; gap:4px 16px;
+}
+
+/* ===== TUJUAN ===== */
+.goal-list{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
+.goal-list li{
+  background:var(--paper); border-radius:10px; padding:14px 16px 14px 44px;
+  position:relative; font-size:0.98rem;
+}
+.goal-list li::before{
+  content:"✓"; position:absolute; left:14px; top:14px;
+  width:22px; height:22px; border-radius:50%; background:var(--success);
+  color:#fff; font-size:0.75rem; display:flex; align-items:center; justify-content:center;
+}
+.smart-badges{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;}
+.smart-badges span{
+  font-family:var(--font-ui); font-size:0.72rem; font-weight:700;
+  background:var(--gold); color:var(--ink); padding:4px 10px; border-radius:6px;
+}
+
+/* ===== MATERI: recount text card + map ===== */
+.recount-card{
+  background:var(--paper);
+  border-radius:10px; padding:20px; position:relative;
+  font-family:var(--font-body); font-size:1.02rem;
+}
+.recount-title{font-family:var(--font-display); font-size:1.15rem; margin-bottom:4px;}
+.recount-meta{font-family:var(--font-ui); font-size:0.78rem; color:var(--ink-soft); margin-bottom:14px;}
+.struct-part{
+  border-left:4px solid transparent; padding:8px 12px; margin-bottom:6px; border-radius:6px;
+  transition:background 0.3s ease, border-color 0.3s ease;
+}
+.struct-part[data-part="orientation"]{ }
+.struct-part.hl{background:rgba(47,111,110,0.12); border-color:var(--teal);}
+
+.map-wrap{margin-top:22px;}
+.map-nodes{display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;}
+.node-btn{
+  flex:1 1 140px; background:var(--paper); border:2px solid var(--paper-darker);
+  border-radius:12px; padding:14px 10px; text-align:center; font-family:var(--font-ui);
+  font-weight:600; font-size:0.85rem; color:var(--ink); transition:all 0.25s ease;
+}
+.node-btn .stamp-mark{
+  display:block; font-family:var(--font-display); font-size:1.5rem; margin-bottom:4px; color:var(--teal);
+}
+.node-btn:hover{border-color:var(--teal); transform:translateY(-2px);}
+.node-btn.active{background:var(--teal); color:#fff; border-color:var(--teal-dark);}
+.node-btn.active .stamp-mark{color:var(--gold);}
+.map-detail{
+  background:#fff; border-radius:10px; padding:16px 18px; margin-top:14px;
+  font-size:0.92rem; box-shadow:inset 0 0 0 1px rgba(34,49,74,0.06); display:none;
+}
+.map-detail.show{display:block;}
+
+/* ===== SIMULASI DETEKTIF ===== */
+.detective-controls{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:16px;}
+.cat-btn{
+  font-family:var(--font-ui); font-weight:600; font-size:0.85rem;
+  border-radius:20px; padding:9px 16px; border:2px solid var(--paper-darker);
+  background:var(--paper); color:var(--ink); display:flex; align-items:center; gap:8px;
+}
+.cat-btn .swatch{width:12px; height:12px; border-radius:50%; display:inline-block;}
+.cat-btn.active{border-color:currentColor; background:rgba(0,0,0,0.04);}
+.detective-text{
+  background:var(--paper); border-radius:10px; padding:20px; font-size:1.02rem;
+  cursor:default; user-select:none;
+}
+.detective-text span.word{cursor:pointer; padding:1px 2px; border-radius:3px;}
+.detective-text span.word:hover{background:rgba(0,0,0,0.06);}
+.word.correct-verb{background:#cfe3d3; box-shadow:0 0 0 2px var(--success) inset;}
+.word.correct-connector{background:#f6e2b8; box-shadow:0 0 0 2px var(--gold) inset;}
+.word.correct-adj{background:#e6cfc7; box-shadow:0 0 0 2px var(--stamp) inset;}
+.word.wrong{background:#f3d2ce; animation:shake 0.3s;}
+@keyframes shake{0%,100%{transform:translateX(0);}25%{transform:translateX(-3px);}75%{transform:translateX(3px);}}
+.score-board{
+  display:flex; gap:16px; flex-wrap:wrap; margin-top:16px; font-family:var(--font-ui); font-size:0.85rem;
+}
+.score-board .item{background:var(--paper); border-radius:8px; padding:8px 14px;}
+.score-board strong{font-size:1.1rem;}
+
+/* ===== LATIHAN ===== */
+.practice-item{background:var(--paper); border-radius:10px; padding:16px 18px; margin-bottom:14px;}
+.practice-item p{margin:0 0 10px;}
+select.blank{
+  font-family:var(--font-ui); font-size:0.9rem; padding:6px 10px; border-radius:6px;
+  border:2px solid var(--paper-darker); background:#fff;
+}
+.feedback{
+  font-family:var(--font-ui); font-size:0.85rem; margin-top:8px; padding:8px 12px;
+  border-radius:6px; display:none;
+}
+.feedback.show{display:block;}
+.feedback.ok{background:#dcefe1; color:var(--success);}
+.feedback.no{background:#f6dedc; color:var(--error);}
+
+/* ===== KUIS ===== */
+.quiz-progress{
+  height:8px; background:var(--paper); border-radius:20px; overflow:hidden; margin-bottom:20px;
+}
+.quiz-progress-bar{height:100%; background:var(--teal); width:0%; transition:width 0.4s ease;}
+.quiz-q{display:none;}
+.quiz-q.active{display:block; animation:fadein 0.4s ease;}
+@keyframes fadein{from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);}}
+.quiz-q h3{font-size:1rem; font-family:var(--font-body); font-weight:600;}
+.opt-btn{
+  display:block; width:100%; text-align:left; background:var(--paper);
+  border:2px solid var(--paper-darker); border-radius:10px; padding:12px 16px;
+  margin-bottom:8px; font-family:var(--font-ui); font-size:0.92rem;
+}
+.opt-btn:hover{border-color:var(--teal);}
+.opt-btn.correct{background:#dcefe1; border-color:var(--success);}
+.opt-btn.incorrect{background:#f6dedc; border-color:var(--error);}
+.opt-btn:disabled{cursor:default;}
+.quiz-nav{display:flex; justify-content:space-between; margin-top:16px;}
+.btn-primary, .btn-ghost{
+  font-family:var(--font-ui); font-weight:700; font-size:0.9rem;
+  padding:10px 20px; border-radius:24px; border:2px solid var(--teal);
+}
+.btn-primary{background:var(--teal); color:#fff;}
+.btn-primary:hover{background:var(--teal-dark);}
+.btn-ghost{background:transparent; color:var(--teal);}
+.quiz-result{display:none; text-align:center; padding:20px;}
+.quiz-result.show{display:block;}
+.quiz-result .big-score{font-family:var(--font-display); font-size:2.4rem; color:var(--teal-dark);}
+
+/* ===== REFLEKSI ===== */
+.reflection-grid{display:grid; gap:16px;}
+@media(min-width:700px){.reflection-grid{grid-template-columns:1fr 1fr;}}
+textarea.journal{
+  width:100%; min-height:100px; font-family:var(--font-body); font-size:0.95rem;
+  border-radius:10px; border:2px solid var(--paper-darker); padding:12px; resize:vertical;
+  background:#fff;
+}
+.self-rate{display:flex; align-items:center; gap:10px; margin:10px 0; font-family:var(--font-ui); font-size:0.85rem;}
+.self-rate input[type=range]{flex:1; accent-color:var(--teal);}
+.profile-dims{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px;}
+.profile-dims .chip{
+  font-family:var(--font-ui); font-size:0.8rem; font-weight:600;
+  background:var(--gold); color:var(--ink); padding:6px 12px; border-radius:20px;
+}
+.partner-box{
+  background:#fff; border:1.5px dashed var(--stamp); border-radius:10px; padding:14px 16px;
+  font-size:0.88rem; margin-top:16px;
+}
+
+/* ===== KESIMPULAN ===== */
+.summary-list{padding-left:20px; margin:0 0 18px;}
+.summary-list li{margin-bottom:6px;}
+.concept-map{width:100%; height:auto;}
+.next-material{
+  display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;
+  background:var(--teal); color:#fff; border-radius:12px; padding:18px 22px; margin-top:20px;
+}
+.next-material a{
+  background:var(--gold); color:var(--ink); text-decoration:none; font-weight:700;
+  font-family:var(--font-ui); padding:10px 18px; border-radius:20px; font-size:0.88rem;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:var(--ink); color:var(--paper-dark); font-family:var(--font-ui);
+  font-size:0.82rem; padding:26px 20px; text-align:center;
+}
+footer strong{color:#fff;}
+footer .meta{margin-top:6px; opacity:0.8;}
+
+/* Accessibility large text mode */
+body.large-text{font-size:1.14rem;}
+body.large-text .eyebrow{font-size:0.8rem;}
+
+/* ===== TAMBAHAN: komponen materi sesuai buku Chapter 3 ===== */
+.lead{font-size:1.02rem;}
+.question-grid{display:grid; gap:12px; margin-top:18px;}
+@media(min-width:700px){.question-grid{grid-template-columns:1fr 1fr;}}
+.question-grid label{display:block; font-family:var(--font-ui); font-weight:600; font-size:0.88rem; margin-bottom:4px;}
+
+.tabs{display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 12px;}
+.tabs button{
+  font-family:var(--font-ui); font-weight:600; font-size:0.85rem;
+  background:var(--paper); color:var(--ink); border:2px solid var(--paper-darker);
+  border-radius:20px; padding:8px 16px;
+}
+.tabs button:hover{border-color:var(--teal);}
+.tabs button[aria-selected="true"]{background:var(--teal); color:#fff; border-color:var(--teal-dark);}
+.tab-panel{display:none; background:var(--paper); border-radius:10px; padding:18px 20px;}
+.tab-panel.show{display:block; animation:fadein 0.3s ease;}
+.feat-list{list-style:none; padding:0; margin:0; display:grid; gap:12px;}
+.feat-list li{border-bottom:1px dashed var(--paper-darker); padding-bottom:12px;}
+.feat-list li:last-child{border-bottom:0; padding-bottom:0;}
+.feat-list .name{font-family:var(--font-ui); font-weight:700;}
+.ex{font-style:italic; color:var(--ink-soft); font-size:0.92rem; margin:4px 0 0;}
+.big-quote{font-size:1.1rem; margin:0;}
+
+.act-title{
+  font-family:var(--font-display); font-size:1.05rem; margin:30px 0 4px;
+  padding-top:18px; border-top:2px dashed rgba(34,49,74,0.2);
+}
+.act-title.first{border-top:0; padding-top:0; margin-top:18px;}
+.act-inst{font-family:var(--font-ui); font-size:0.88rem; color:var(--ink-soft); margin:0 0 12px;}
+.note-box{
+  background:#fff; border:1.5px dashed var(--teal); border-radius:10px; padding:12px 16px;
+  font-family:var(--font-ui); font-size:0.86rem; margin:12px 0;
+}
+.text-box{background:var(--paper); border-radius:10px; padding:16px 20px; margin-bottom:14px;}
+.text-box p{margin:0 0 10px;}
+.text-box p:last-child{margin-bottom:0;}
+.text-box .meta{font-family:var(--font-ui); font-size:0.78rem; color:var(--ink-soft); margin-bottom:8px;}
+
+.tbl-wrap{overflow-x:auto; margin-bottom:12px;}
+table.tbl{
+  width:100%; border-collapse:collapse; background:var(--paper); border-radius:10px;
+  overflow:hidden; font-family:var(--font-ui); font-size:0.88rem;
+}
+.tbl th,.tbl td{padding:8px 10px; border-bottom:1px solid var(--paper-darker); text-align:left; vertical-align:middle;}
+.tbl th{background:var(--paper-darker);}
+.tbl td.c,.tbl th.c{text-align:center;}
+.tbl td label{margin-right:12px; white-space:nowrap;}
+.tbl .key{color:var(--teal-dark); font-size:0.82rem;}
+
+input.txt{
+  font-family:var(--font-ui); font-size:0.9rem; padding:6px 10px; border-radius:6px;
+  border:2px solid var(--paper-darker); background:#fff; width:100%;
+}
+input.txt.inline{width:auto; min-width:130px; max-width:100%;}
+select.blank.is-ok, input.txt.is-ok{border-color:var(--success); background:#dcefe1;}
+select.blank.is-no, input.txt.is-no{border-color:var(--error); background:#f6dedc;}
+.btn-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px;}
+
+.dialog{display:grid; gap:8px; margin-bottom:12px;}
+.dialog-row{display:grid; grid-template-columns:80px 1fr; gap:8px; align-items:center; font-family:var(--font-ui); font-size:0.88rem;}
+.dialog-row .who{font-weight:700;}
+.dialog-row .given{background:var(--paper); border-radius:6px; padding:7px 10px;}
+.chips{display:flex; flex-wrap:wrap; gap:8px; margin:8px 0 14px;}
+.chips span{font-family:var(--font-ui); font-size:0.78rem; background:var(--paper); border:1px solid var(--paper-darker); border-radius:20px; padding:4px 12px;}
+
+.order-list{list-style:none; padding:0; margin:0 0 12px; display:grid; gap:8px;}
+.order-list li{
+  display:grid; grid-template-columns:1fr auto; gap:10px; align-items:center;
+  background:var(--paper); border-radius:10px; padding:10px 14px; font-size:0.95rem;
+}
+.order-list .letter{font-family:var(--font-display); color:var(--teal-dark); margin-right:6px;}
+
+.timeline{list-style:none; padding:0; margin:0 0 14px; display:grid; gap:6px;}
+.timeline li{
+  display:grid; grid-template-columns:110px 1fr; gap:10px; background:var(--paper);
+  border-radius:8px; padding:8px 12px; font-family:var(--font-ui); font-size:0.85rem;
+}
+.timeline .period{font-weight:700; color:var(--stamp);}
+.match-cols{display:grid; gap:16px;}
+@media(min-width:760px){.match-cols{grid-template-columns:1.1fr 1fr; align-items:start;}}
+.def-list{list-style:none; padding:0; margin:0; font-family:var(--font-ui); font-size:0.88rem; display:grid; gap:6px;}
+.def-list li{background:var(--paper); border-radius:8px; padding:8px 12px;}
+.def-list b{color:var(--teal-dark); margin-right:6px;}
+
+.qa-item{background:var(--paper); border-radius:10px; padding:14px 16px; margin-bottom:12px;}
+.qa-item p{margin:0 0 8px; font-weight:600;}
+.qa-item textarea{width:100%; min-height:60px; font-family:var(--font-body); font-size:0.92rem; border:2px solid var(--paper-darker); border-radius:8px; padding:8px 10px; background:#fff; resize:vertical;}
+details.answer{margin-top:8px; font-family:var(--font-ui); font-size:0.86rem;}
+details.answer summary{cursor:pointer; color:var(--teal-dark); font-weight:600;}
+details.answer div{background:#dcefe1; border-radius:6px; padding:8px 12px; margin-top:6px;}
+
+.formula-grid{display:grid; gap:12px; margin:14px 0;}
+@media(min-width:760px){.formula-grid{grid-template-columns:repeat(3,1fr);}}
+.formula{background:var(--paper); border-radius:10px; padding:14px 16px; border-top:5px solid var(--teal);}
+.formula.neg{border-top-color:var(--error);}
+.formula.int{border-top-color:var(--gold);}
+.formula .type{font-family:var(--font-ui); font-weight:700; font-size:0.85rem;}
+.formula .code{font-family:var(--font-display); font-size:0.98rem; margin:8px 0; color:var(--teal-dark);}
+.formula .desc{font-family:var(--font-ui); font-size:0.8rem; color:var(--ink-soft);}
+.pic-grid{display:grid; gap:10px;}
+@media(min-width:700px){.pic-grid{grid-template-columns:1fr 1fr;}}
+.pic-item{background:var(--paper); border-radius:10px; padding:12px 14px; display:grid; grid-template-columns:52px 1fr; gap:12px; align-items:center; font-size:0.95rem;}
+.pic-item .emoji{font-size:2rem; text-align:center;}
+.pic-item .hint{font-family:var(--font-ui); font-size:0.75rem; color:var(--ink-soft);}
+
+.write-list{display:grid; gap:12px;}
+.write-item{display:grid; gap:10px; background:var(--paper); border-radius:10px; padding:12px 14px; align-items:center;}
+@media(min-width:640px){.write-item{grid-template-columns:110px 1fr;}}
+.write-item .emoji{font-size:2.6rem; text-align:center;}
+.write-item textarea{width:100%; min-height:70px; font-family:var(--font-body); font-size:0.92rem; border:2px solid var(--paper-darker); border-radius:8px; padding:8px 10px; background:#fff; resize:vertical;}
+
+.comic-src{display:grid; gap:8px; margin-bottom:14px;}
+@media(min-width:640px){.comic-src{grid-template-columns:repeat(3,1fr);}}
+.panel{background:#fff; border:2px solid var(--ink); border-radius:8px; padding:10px 12px; font-family:var(--font-ui); font-size:0.84rem; min-height:76px;}
+.panel b{display:block; font-size:0.72rem; color:var(--stamp); margin-bottom:2px;}
+.comic-text{background:var(--paper); border-radius:10px; padding:16px 20px; line-height:2.2;}
+.comic-text h3{font-size:1.05rem; text-align:center; margin-bottom:8px;}
+
+.steps{margin:0 0 14px; padding-left:22px; font-family:var(--font-ui); font-size:0.9rem;}
+.steps li{margin-bottom:4px;}
+.comic-board{display:grid; gap:10px; background:var(--ink); padding:14px; border-radius:12px;}
+.comic-board .top{display:grid; gap:10px;}
+@media(min-width:700px){.comic-board .top{grid-template-columns:1fr 2fr;}
+  .comic-board .row1{grid-template-columns:1fr 1fr;} .comic-board .row2{grid-template-columns:repeat(3,1fr);}}
+.comic-board .row1,.comic-board .row2{display:grid; gap:10px;}
+.comic-board input,.comic-board textarea{
+  width:100%; border:2px solid var(--gold); border-radius:8px; background:var(--paper);
+  font-family:var(--font-body); font-size:0.9rem; padding:8px 10px; resize:vertical;
+}
+.comic-board input{font-family:var(--font-display); text-align:center; font-size:1rem;}
+.comic-board textarea{min-height:110px;}
+.check-list{list-style:none; padding:0; margin:14px 0 0; display:grid; gap:6px; font-family:var(--font-ui); font-size:0.88rem;}
+.check-list label{display:flex; gap:8px; align-items:flex-start;}
+
+/* kuis diperluas */
+.q-group{font-family:var(--font-ui); font-size:0.75rem; font-weight:700; color:var(--stamp); margin-bottom:8px;}
+details.passage{background:var(--paper); border-radius:10px; padding:10px 16px; margin-bottom:14px; font-size:0.93rem;}
+details.passage summary{cursor:pointer; font-family:var(--font-ui); font-weight:600; color:var(--teal-dark);}
+details.passage p{margin:8px 0 0;}
+.quiz-hint{font-family:var(--font-ui); font-size:0.82rem; color:var(--ink-soft); margin:-4px 0 10px;}
+.multi-opt{
+  display:flex; gap:10px; align-items:flex-start; background:var(--paper); border:2px solid var(--paper-darker);
+  border-radius:10px; padding:11px 14px; margin-bottom:8px; font-family:var(--font-ui); font-size:0.92rem;
+}
+.multi-opt.correct{background:#dcefe1; border-color:var(--success);}
+.multi-opt.incorrect{background:#f6dedc; border-color:var(--error);}
+.tf-row{display:grid; gap:8px; background:var(--paper); border-radius:10px; padding:10px 14px; margin-bottom:8px; font-family:var(--font-ui); font-size:0.9rem;}
+@media(min-width:640px){.tf-row{grid-template-columns:1fr auto; align-items:center;}}
+.tf-row .tf-btns{display:flex; gap:8px;}
+.tf-btns button{font-size:0.82rem; font-weight:600; padding:6px 14px; border-radius:16px; border:2px solid var(--paper-darker); background:#fff;}
+.tf-btns button.sel{border-color:var(--teal); background:var(--teal); color:#fff;}
+.tf-row.correct{outline:2px solid var(--success); background:#dcefe1;}
+.tf-row.incorrect{outline:2px solid var(--error); background:#f6dedc;}
+.explain{display:none; background:#fff; border-left:5px solid var(--teal); border-radius:8px; padding:12px 16px; margin-top:12px; font-size:0.9rem;}
+.explain.show{display:block;}
+.explain strong{font-family:var(--font-ui);}
+
+@media print{
+  header.site-header, nav, footer, .no-print{display:none !important;}
+  .page{box-shadow:none; break-inside:avoid;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="stamp-logo">RT</div>
+    <div class="header-title">
+      <div class="eyebrow">Chapter 3 · Bahasa Inggris Kelas IX</div>
+      <h1>Jejak Perjalanan Waktu: Recount Text — Retelling Past Events</h1>
+    </div>
+    <button id="a11y-toggle" aria-pressed="false">Aa Perbesar Teks</button>
+  </div>
+  <nav class="route" id="mainNav" aria-label="Navigasi bagian pembelajaran">
+    <a href="#beranda"><span class="dot"></span>Beranda</a>
+    <a href="#tujuan"><span class="dot"></span>Tujuan</a>
+    <a href="#materi"><span class="dot"></span>Let's Build</a>
+    <a href="#peta"><span class="dot"></span>Peta Struktur</a>
+    <a href="#simak"><span class="dot"></span>Listen &amp; Speak</a>
+    <a href="#simulasi"><span class="dot"></span>Detektif Bahasa</a>
+    <a href="#baca"><span class="dot"></span>Read &amp; View</a>
+    <a href="#tense"><span class="dot"></span>Simple Past Tense</a>
+    <a href="#tulis"><span class="dot"></span>Write &amp; Present</a>
+    <a href="#kuis"><span class="dot"></span>Kuis</a>
+    <a href="#refleksi"><span class="dot"></span>Refleksi</a>
+    <a href="#kesimpulan"><span class="dot"></span>Kesimpulan</a>
+  </nav>
+</header>
+
+<main>
+<div class="route-line" aria-hidden="true"></div>
+
+<!-- ================= BERANDA / LET'S GET STARTED ================= -->
+<section class="page" id="beranda">
+  <span class="tag">Let's Get Started · Apersepsi</span>
+  <div class="hero-grid">
+    <div>
+      <h2>Pernahkah kamu bercerita tentang momen bersama keluarga atau temanmu?</h2>
+      <p class="lead">Terkadang kita perlu berbagi momen kita dengan keluarga atau teman. Ketika kita membicarakan pengalaman atau momen di masa lalu, kita menyebutnya <strong>bercerita</strong>. Nah, itulah yang dilakukan sebuah <strong>recount text</strong>: menceritakan kembali peristiwa yang sudah terjadi. Hari ini kamu akan naik "kapsul waktu" untuk menjelajahi teksnya.</p>
+      <div class="hero-question">"Lihat gambar sebuah keluarga di pantai. Jawab empat pertanyaan di bawah ini berdasarkan pengalamanmu sendiri."</div>
+      <p style="font-size:0.9rem; color:var(--ink-soft);">Kamu akan berperan sebagai <em>detektif bahasa</em>: mendengarkan, membaca, menulis, dan mempresentasikan recount text dalam bentuk komik strip.</p>
+    </div>
+    <div style="text-align:center;">
+      <svg class="illustration" viewBox="0 0 300 260" role="img" aria-label="Ilustrasi pantai dengan matahari, ombak, dan bola pantai">
+        <ellipse cx="150" cy="238" rx="115" ry="12" fill="#00000012"/>
+        <circle cx="222" cy="58" r="28" fill="#C99A3E" opacity="0.9"/>
+        <rect x="20" y="110" width="260" height="70" rx="10" fill="#2F6F6E" opacity="0.85"/>
+        <path d="M20 128 Q50 112 80 128 T140 128 T200 128 T260 128 L280 128" fill="none" stroke="#F1E7D4" stroke-width="3" opacity="0.8"/>
+        <path d="M20 148 Q50 132 80 148 T140 148 T200 148 T260 148 L280 148" fill="none" stroke="#F1E7D4" stroke-width="3" opacity="0.5"/>
+        <path d="M20 180 Q150 160 280 180 L280 225 Q150 245 20 225 Z" fill="#D8C6A0"/>
+        <circle cx="100" cy="200" r="16" fill="#F1E7D4" stroke="#A8442D" stroke-width="3"/>
+        <path d="M84 200 Q100 186 116 200" fill="none" stroke="#A8442D" stroke-width="3"/>
+        <path d="M84 200 Q100 214 116 200" fill="none" stroke="#2F6F6E" stroke-width="3"/>
+        <path d="M170 210 l6 -3 M186 206 l6 -3 M202 202 l6 -3" stroke="#4A5A78" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+        <text x="150" y="30" text-anchor="middle" font-family="Special Elite" font-size="13" fill="#22314A">Retelling Past Events</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="question-grid">
+    <div><label for="gs1">Where did the moment take place?</label><input class="txt" id="gs1" type="text" placeholder="Tulis jawabanmu..."></div>
+    <div><label for="gs2">Have you ever been there?</label><input class="txt" id="gs2" type="text" placeholder="Tulis jawabanmu..."></div>
+    <div><label for="gs3">When did you go there?</label><input class="txt" id="gs3" type="text" placeholder="Tulis jawabanmu..."></div>
+    <div><label for="gs4">What activities did you do there?</label><input class="txt" id="gs4" type="text" placeholder="Tulis jawabanmu..."></div>
+  </div>
+
+  <div class="identity-box" aria-label="Identitas pembelajaran">
+    <span><strong>Sekolah:</strong> SMP Negeri 1 Dlingo</span>
+    <span><strong>Guru:</strong> Bustanul Ulum, M.Pd</span>
+    <span><strong>Kelas / Semester:</strong> IX / Ganjil</span>
+    <span><strong>Tahun Pelajaran:</strong> 2026/2027</span>
+  </div>
+</section>
+
+<!-- ================= TUJUAN ================= -->
+<section class="page" id="tujuan">
+  <span class="tag">Tujuan Pembelajaran</span>
+  <h2>Setelah menyelesaikan Chapter 3 ini, kamu mampu:</h2>
+  <ul class="goal-list">
+    <li><strong>Listen and Speak (Mendengarkan dan Berbicara):</strong> mengidentifikasi informasi umum dan terperinci dari teks recount lisan, serta menceritakan pengalaman pribadi.</li>
+    <li><strong>Read and View (Membaca dan Memirsa):</strong> mengidentifikasi fungsi sosial, struktur teks, dan unsur kebahasaan dari teks recount.</li>
+    <li><strong>Write and Present (Menulis dan Mempresentasikan):</strong> menulis teks recount sederhana dan mempresentasikan teks recount dalam bentuk komik strip.</li>
+  </ul>
+  <div class="smart-badges">
+    <span>S — Recount text: fungsi sosial, struktur &amp; unsur kebahasaan</span>
+    <span>M — Skor latihan dan kuis terukur</span>
+    <span>A — Bertahap: menyimak, membaca, menulis, presentasi</span>
+    <span>R — Terhubung dengan pengalaman pribadi &amp; liburan</span>
+    <span>T — Tuntas sesuai alokasi waktu yang ditetapkan guru</span>
+  </div>
+</section>
+
+<!-- ================= MATERI / LET'S BUILD ================= -->
+<section class="page" id="materi">
+  <span class="tag">A. Let's Build · Penyajian Materi</span>
+  <h2>Apa itu recount text?</h2>
+  <p class="lead">Recount text adalah teks yang menceritakan sesuatu yang terjadi di masa lalu. Isinya bisa berupa peristiwa, situasi, atau aktivitas yang terjadi pada hari tertentu. Klik tiap tab untuk menjelajahi materinya.</p>
+
+  <div class="tabs" role="tablist" aria-label="Materi recount text">
+    <button role="tab" aria-selected="true" data-tab="t-def">1. Definition</button>
+    <button role="tab" aria-selected="false" data-tab="t-struct">2. Generic Structure</button>
+    <button role="tab" aria-selected="false" data-tab="t-lang">3. Language Features</button>
+    <button role="tab" aria-selected="false" data-tab="t-purpose">Purpose</button>
+  </div>
+
+  <div class="tab-panel show" id="t-def" role="tabpanel">
+    <p class="big-quote">A recount text is a text that retells events or experiences that happened in the past. The writer tells what happened and the order in which the events occurred.</p>
+    <p class="ex">Contoh judul catatan: "My Holiday" — lalu ditulis urut 1, 2, 3 kejadiannya.</p>
+  </div>
+
+  <div class="tab-panel" id="t-struct" role="tabpanel">
+    <ul class="feat-list">
+      <li>
+        <div class="name">Orientation</div>
+        <div>Introduces the participants, place, and time of the events.</div>
+        <p class="ex">Example: Last summer, my family and I went to the beach.</p>
+      </li>
+      <li>
+        <div class="name">Events</div>
+        <div>Tells events in the order they happened.</div>
+        <p class="ex">Example: First, we set up our tent. Then, we went swimming. After that, we had a barbecue.</p>
+      </li>
+      <li>
+        <div class="name">Reorientation</div>
+        <div>Gives a comment or feeling about the events.</div>
+        <p class="ex">Example: It was a wonderful trip and I will never forget it.</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tab-panel" id="t-lang" role="tabpanel">
+    <ul class="feat-list">
+      <li><div class="name">1. Past tense verbs</div><div>Events happened in the past.</div><p class="ex">went, visited, played, watched, arrived, enjoyed</p></li>
+      <li><div class="name">2. Time connectors</div><div>Show the order of events.</div><p class="ex">first, then, next, after that, later, finally</p></li>
+      <li><div class="name">3. Action verbs</div><div>Describe what the participants did.</div><p class="ex">swam, cooked, drove, saw, took photos</p></li>
+      <li><div class="name">4. Personal pronouns</div><div>Show who is involved.</div><p class="ex">I, we, my, our, me, us</p></li>
+      <li><div class="name">5. Expressions of feeling</div><div>Show the writer's feelings.</div><p class="ex">it was exciting, I was happy, it was unforgettable</p></li>
+    </ul>
+  </div>
+
+  <div class="tab-panel" id="t-purpose" role="tabpanel">
+    <p class="big-quote">To retell past events or experiences for informing or entertaining the readers.</p>
+  </div>
+</section>
+
+<!-- ================= PETA STRUKTUR / LET'S READ AND VIEW ================= -->
+<section class="page" id="peta">
+  <span class="tag">C. Let's Read and View · Eksplorasi</span>
+  <h2>Pelajari struktur generik teks recount, lalu klik tiap titik pada peta</h2>
+  <div class="recount-card">
+    <div class="recount-title">Contoh Teks Recount</div>
+    <div class="recount-meta">Study the generic structures of recount text below.</div>
+
+    <p class="struct-part" data-part="orientation">Last Sunday, I went to my grandmother's house with my parents in the morning. She lives in a small village about one hour from our home.</p>
+
+    <p class="struct-part" data-part="events"><strong>First</strong>, we helped Grandma clean the yard. <strong>Then</strong>, we picked some vegetables in her garden. <strong>After that</strong>, Grandma cooked our favorite lunch. <strong>In the afternoon</strong>, we talked and played board games together. <strong>Before</strong> we went home, Grandma gave us some fresh fruits from her garden.</p>
+
+    <p class="struct-part" data-part="reorientation">I had a wonderful time with my family. I felt happy and grateful because we could spend quality time together. I hope we can visit Grandma again soon.</p>
+  </div>
+
+  <div class="map-wrap">
+    <h3 style="font-size:1rem;">🗺️ Peta Struktur Recount Text</h3>
+    <div class="map-nodes" id="mapNodes">
+      <button class="node-btn" data-part="orientation"><span class="stamp-mark">①</span>Orientation</button>
+      <button class="node-btn" data-part="events"><span class="stamp-mark">②</span>Series of Events</button>
+      <button class="node-btn" data-part="reorientation"><span class="stamp-mark">③</span>Reorientation</button>
+    </div>
+    <div class="map-detail" id="mapDetail"></div>
+  </div>
+</section>
+
+<!-- ================= LISTEN AND SPEAK ================= -->
+<section class="page" id="simak">
+  <span class="tag">B. Let's Listen and Speak</span>
+  <h2>🎧 Menyimak &amp; Berbicara</h2>
+  <p>Listen to the recording carefully. Amanda is telling about her experience visiting book fair.</p>
+  <div class="note-box"><strong>Catatan:</strong> Rekaman diakses lewat kode QR pada halaman 58 buku (atau diputar oleh guru). Kegiatan 1 dan 2 dikerjakan sambil mendengarkan rekaman; jawabannya dibahas bersama guru.</div>
+
+  <h3 class="act-title first">Activity 1</h3>
+  <p class="act-inst">Check the verbs you can hear from the recording.</p>
+  <div class="tbl-wrap">
+    <table class="tbl" id="act1">
+      <thead><tr><th class="c">Sentence</th><th colspan="3">The verbs I heard from the recording ...</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h3 class="act-title">Activity 2</h3>
+  <p class="act-inst">Listen to the recording once again and decide whether the statements are TRUE or FALSE.</p>
+  <div class="tbl-wrap">
+    <table class="tbl" id="act2">
+      <thead><tr><th class="c">No.</th><th>Statements</th><th class="c">True</th><th class="c">False</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h3 class="act-title">Activity 3</h3>
+  <p class="act-inst">Create a short dialog between you and Amanda talking about her weekend. Work with your desk mate then practice it. <em>It's breaktime. You are visiting library with Amanda and talked about her weekend.</em></p>
+  <div class="chips" aria-label="Bantuan ungkapan"><span>Where did you go?</span><span>Who did you go with?</span><span>What did you buy?</span><span>How did you feel?</span><span>Would you go again?</span></div>
+  <div class="dialog">
+    <div class="dialog-row"><span class="who">You</span><span class="given">I heard you visited a book fair last weekend. How was it?</span></div>
+    <div class="dialog-row"><span class="who">Amanda</span><input class="txt" type="text" aria-label="Amanda baris 1"></div>
+    <div class="dialog-row"><span class="who">You</span><input class="txt" type="text" aria-label="You baris 2"></div>
+    <div class="dialog-row"><span class="who">Amanda</span><input class="txt" type="text" aria-label="Amanda baris 2"></div>
+    <div class="dialog-row"><span class="who">You</span><input class="txt" type="text" aria-label="You baris 3"></div>
+    <div class="dialog-row"><span class="who">Amanda</span><input class="txt" type="text" aria-label="Amanda baris 3"></div>
+    <div class="dialog-row"><span class="who">You</span><input class="txt" type="text" aria-label="You baris 4"></div>
+    <div class="dialog-row"><span class="who">Amanda</span><input class="txt" type="text" aria-label="Amanda baris 4"></div>
+    <div class="dialog-row"><span class="who">You</span><input class="txt" type="text" aria-label="You baris 5"></div>
+    <div class="dialog-row"><span class="who">Amanda</span><input class="txt" type="text" aria-label="Amanda baris 5"></div>
+  </div>
+  <p class="act-inst">(You may add some lines if necessary)</p>
+
+  <h3 class="act-title">Activity 4</h3>
+  <p class="act-inst">Create your own dialog with your friends about your last holiday. Act it out.</p>
+  <textarea class="journal" style="min-height:140px;" aria-label="Dialog tentang liburan terakhir" placeholder="A: Where did you go last holiday?&#10;B: ..."></textarea>
+</section>
+
+<!-- ================= SIMULASI DETEKTIF BAHASA ================= -->
+<section class="page" id="simulasi">
+  <span class="tag">Aktivitas Interaktif Siswa · Eksperimen Virtual</span>
+  <h2>🕵️ Simulasi Detektif Bahasa</h2>
+  <p>Pilih satu kategori unsur kebahasaan, lalu klik kata-kata dalam teks yang menurutmu termasuk kategori tersebut. Sistem akan memberi tahu jika tebakanmu tepat!</p>
+  <div class="detective-controls" id="detCats">
+    <button class="cat-btn" data-cat="verb" style="color:var(--success)"><span class="swatch" style="background:var(--success)"></span>Past Tense Verbs</button>
+    <button class="cat-btn" data-cat="connector" style="color:#a97a13"><span class="swatch" style="background:var(--gold)"></span>Time Connectors</button>
+    <button class="cat-btn" data-cat="feeling" style="color:var(--stamp)"><span class="swatch" style="background:var(--stamp)"></span>Expressions of Feeling</button>
+  </div>
+  <div class="detective-text" id="detectiveText"></div>
+  <div class="score-board" id="scoreBoard">
+    <div class="item">Past Tense Verbs: <strong id="scoreVerb">0/0</strong></div>
+    <div class="item">Time Connectors: <strong id="scoreConn">0/0</strong></div>
+    <div class="item">Expressions of Feeling: <strong id="scoreFeel">0/0</strong></div>
+  </div>
+</section>
+
+<!-- ================= READ AND VIEW (Activity 5-10) ================= -->
+<section class="page" id="baca">
+  <span class="tag">C. Let's Read and View · Latihan Membaca</span>
+  <h2>📖 Membaca, Memahami &amp; Menjawab</h2>
+
+  <h3 class="act-title first">Activity 5</h3>
+  <p class="act-inst">Read the following text then underline the verbs (verb 2). Pilih kata yang menurutmu bentuk lampau (verb 2) di dalam teks.</p>
+  <div class="detective-text" id="act5Text"></div>
+  <div class="score-board"><div class="item">Verb 2 ditemukan: <strong id="scoreAct5">0/0</strong></div></div>
+
+  <h3 class="act-title">Activity 6</h3>
+  <p class="act-inst">Write the meaning of these words, then find the words in the text that have the same meaning (synonym). Number 1 has been done for you. Tulis artinya sendiri, lalu pilih sinonimnya dari teks Activity 5.</p>
+  <div class="tbl-wrap">
+    <table class="tbl" id="act6">
+      <thead><tr><th class="c">No.</th><th>Vocabulary</th><th>Meaning</th><th>Synonym in the text</th><th>Kunci</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="btn-row"><button class="btn-primary" id="checkAct6">Periksa Jawaban</button></div>
+  <div class="feedback" id="fbAct6"></div>
+
+  <h3 class="act-title">Activity 7</h3>
+  <p class="act-inst">Based on the text, arrange the events in the correct order. Pilih urutan (1–8) untuk setiap kejadian.</p>
+  <ul class="order-list" id="act7"></ul>
+  <div class="btn-row"><button class="btn-primary" id="checkAct7">Periksa Jawaban</button></div>
+  <div class="feedback" id="fbAct7"></div>
+
+  <h3 class="act-title">Activity 8</h3>
+  <p class="act-inst">Read the text carefully then match the words in column A with the meaning in column B.</p>
+  <div class="text-box">
+    <p><strong>The Evolution of Data Storage</strong> — <em>From large and heavy to small and powerful: storing more data, anywhere, anytime.</em></p>
+    <ul class="timeline">
+      <li><span class="period">Before 1950s</span><span><strong>Punch cards</strong> — used in early computers to store data and instructions; stored a few bytes of data.</span></li>
+      <li><span class="period">1950s–1960s</span><span><strong>Magnetic tape</strong> — data stored on long plastic tapes, used for backups; kilobytes to megabytes.</span></li>
+      <li><span class="period">1960s–1970s</span><span><strong>Hard Disk Drive (HDD)</strong> — data stored magnetically on spinning disks, faster access; megabytes to gigabytes.</span></li>
+      <li><span class="period">1980s–1990s</span><span><strong>Floppy disk</strong> — portable and reusable, for documents and small files; hundreds of kilobytes.</span></li>
+      <li><span class="period">2000s</span><span><strong>USB flash drive</strong> — small, portable, easy to use; megabytes to terabytes.</span></li>
+      <li><span class="period">2010s</span><span><strong>External hard drive &amp; SSD</strong> — larger capacities and faster speeds; terabytes to petabytes.</span></li>
+      <li><span class="period">2020s–beyond</span><span><strong>Cloud storage &amp; the future</strong> — data stored online and accessed from anywhere; petabytes and beyond.</span></li>
+    </ul>
+    <p class="meta">Did you know? In the future, scientists are exploring storage in DNA, holographic crystals, and even 5D storage.</p>
+  </div>
+  <div class="match-cols">
+    <div class="tbl-wrap">
+      <table class="tbl" id="act8">
+        <thead><tr><th class="c">No.</th><th>A</th><th>B</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <ul class="def-list" id="act8defs"></ul>
+  </div>
+  <div class="btn-row"><button class="btn-primary" id="checkAct8">Periksa Jawaban</button></div>
+  <div class="feedback" id="fbAct8"></div>
+
+  <h3 class="act-title">Activity 9</h3>
+  <p class="act-inst">Scan the QR code below. Answer the questions based on "The Evolution of Data Storage" timeline.</p>
+  <div class="note-box">Kode QR ada di halaman 63 buku. Alamat tautannya: <a href="https://wordwall.net/id/resource/113346519" target="_blank" rel="noopener">wordwall.net/id/resource/113346519</a></div>
+
+  <h3 class="act-title">Activity 10</h3>
+  <p class="act-inst">Read the text and answer the question in complete sentences. Number 1 has been done for you.</p>
+  <div class="text-box">
+    <p>Last year, I was chosen as the Student Board President at my school. Many students were surprised because I was usually quiet and did not often speak in front of large groups. Some students even thought that I could not lead the student board well. At first, I felt nervous and insecure, but I wanted to prove that I could do my best.</p>
+    <p>After becoming the president, I worked very hard every day. I listened to my teachers' advice, discussed ideas with my team, and carefully planned school programs. Sometimes, I felt tired because I had many responsibilities, and a few students criticized my decisions. However, I stayed patient and continued learning to become a better leader.</p>
+    <p>Slowly, positive changes started to appear at school. My team and I organized fun competitions, clean-up programs, and charity events. Many students became more active in school activities. In the end, students and teachers began to trust and support me. From this experience, I learned that hard work, resilience, and determination can help us achieve good things.</p>
+  </div>
+  <div class="qa-item"><p>1. How did the writer feel at the beginning of her leadership?</p><em>The writer felt nervous and insecure.</em></div>
+  <div class="qa-item"><p>2. What did the writer do to become a better leader?</p><textarea aria-label="Jawaban nomor 2"></textarea>
+    <details class="answer"><summary>Lihat contoh jawaban</summary><div>She listened to her teachers' advice, discussed ideas with her team, and carefully planned school programs. She also stayed patient and continued learning.</div></details></div>
+  <div class="qa-item"><p>3. What positive changes happened at school after the writer became the president?</p><textarea aria-label="Jawaban nomor 3"></textarea>
+    <details class="answer"><summary>Lihat contoh jawaban</summary><div>The writer and her team organized fun competitions, clean-up programs, and charity events, and many students became more active in school activities.</div></details></div>
+  <div class="qa-item"><p>4. Why did students and teachers begin to trust and support the writer in the end?</p><textarea aria-label="Jawaban nomor 4"></textarea>
+    <details class="answer"><summary>Lihat contoh jawaban</summary><div>Because the writer worked hard and her programs brought positive changes to the school.</div></details></div>
+  <div class="qa-item"><p>5. Did her/his teachers support her/him?</p><textarea aria-label="Jawaban nomor 5"></textarea>
+    <details class="answer"><summary>Lihat contoh jawaban</summary><div>Yes, they did. In the end, the teachers began to trust and support the writer.</div></details></div>
+</section>
+
+<!-- ================= SIMPLE PAST TENSE ================= -->
+<section class="page" id="tense">
+  <span class="tag">D. Let's Write and Present · Tata Bahasa</span>
+  <h2>Simple Past Tense in Recount Text</h2>
+  <p>Study the formula of Simple Past Tense below. Simple Past Tense is used in recount text to describe actions or events that happened and finished in the past.</p>
+  <div class="formula-grid">
+    <div class="formula">
+      <div class="type">✅ Positive (+) — sentences that state an action</div>
+      <div class="code">S + V₂ (past form) + O.</div>
+      <div class="desc">Example: I visited my grandparents last weekend.</div>
+    </div>
+    <div class="formula neg">
+      <div class="type">❌ Negative (−) — an action did not happen</div>
+      <div class="code">S + did not (didn't) + V₁ (base form) + O.</div>
+      <div class="desc">Example: I didn't go to the beach yesterday.</div>
+    </div>
+    <div class="formula int">
+      <div class="type">❓ Interrogative (?) — questions about the past</div>
+      <div class="code">Did + S + V₁ (base form) + O?</div>
+      <div class="desc">Example: Did you watch the movie last night?</div>
+    </div>
+  </div>
+  <div class="note-box"><strong>Note:</strong> In Simple Past Tense, most verbs add <em>-ed</em> at the end (played, visited, cooked). But some verbs are irregular and change form (went, saw, took).</div>
+
+  <h3 class="act-title">Activity 11</h3>
+  <p class="act-inst">Look at the pictures and complete the sentences using Simple Past tense. Tulis bentuk lampau dari kata kerja dalam tanda kurung.</p>
+  <div class="pic-grid" id="act11"></div>
+  <div class="btn-row"><button class="btn-primary" id="checkAct11">Periksa Jawaban</button></div>
+  <div class="feedback" id="fbAct11"></div>
+</section>
+
+<!-- ================= WRITE AND PRESENT (Activity 12-14) ================= -->
+<section class="page" id="tulis">
+  <span class="tag">D. Let's Write and Present · Menulis &amp; Presentasi</span>
+  <h2>✍️ Menulis dan Mempresentasikan</h2>
+
+  <h3 class="act-title first">Activity 12</h3>
+  <p class="act-inst">Observe the picture. Each picture describes what the student did on their weekend. Write 2 sentences about it. Don't forget to use Simple Past Tense.</p>
+  <div class="write-item" style="margin-bottom:12px;">
+    <div class="emoji" aria-hidden="true">📺</div>
+    <div><strong>Example:</strong><br>Andra watched television in the living room. He enjoyed a movie and ate snacks.</div>
+  </div>
+  <div class="write-list" id="act12"></div>
+
+  <h3 class="act-title">Activity 13</h3>
+  <p class="act-inst">Read the comic below. Rewrite it into a simple recount text. Use the sentences provided as the guidelines.</p>
+  <h4 style="font-family:var(--font-display); margin:0 0 8px;">A DAY I'LL NEVER FORGET</h4>
+  <div class="comic-src">
+    <div class="panel"><b>Panel 1</b>"Let's go to the beach! Our exams were finally over!"</div>
+    <div class="panel"><b>Panel 2</b>"Wow, the weather was perfect!"</div>
+    <div class="panel"><b>Panel 3</b>"Say cheese—whoa!"</div>
+    <div class="panel"><b>Panel 4</b>"Hahaha! Rafi got splashed!"</div>
+    <div class="panel"><b>Panel 5</b>"Look at this pretty shell! Let's take some home!"</div>
+    <div class="panel"><b>Panel 6</b>"Today was amazing."</div>
+  </div>
+  <div class="comic-text" id="act13">
+    <h3>A Day I'll Never Forget</h3>
+    <p>Last weekend, my friends and I went to the beach after <input class="txt inline" data-sample="our exams were finally over" aria-label="blank 1">. We went there <input class="txt inline" data-sample="by bus" aria-label="blank 2">. We felt very happy and excited because the weather <input class="txt inline" data-sample="was perfect" aria-label="blank 3">.</p>
+    <p>When we arrived, we <input class="txt inline" data-sample="played volleyball on the sand" aria-label="blank 4">. Then, my friend tried to take a selfie near the waves. Suddenly, <input class="txt inline" data-sample="Rafi got splashed by a big wave" aria-label="blank 5">, and we all laughed loudly. After that, we <input class="txt inline" data-sample="collected some pretty shells" aria-label="blank 6">. We also <input class="txt inline" data-sample="ate snacks together" aria-label="blank 7"> while talking and joking.</p>
+    <p>In the afternoon, we watched the <input class="txt inline" data-sample="sunset" aria-label="blank 8">. Before going home, we <input class="txt inline" data-sample="took some shells home" aria-label="blank 9">. It was <input class="txt inline" data-sample="an amazing day" aria-label="blank 10">.</p>
+  </div>
+  <div class="btn-row"><button class="btn-ghost" id="showSample13">Lihat contoh jawaban</button><button class="btn-ghost" id="clear13">Kosongkan</button></div>
+  <p class="act-inst" style="margin-top:6px;">Contoh jawaban hanya salah satu kemungkinan; jawabanmu boleh berbeda selama sesuai dengan komiknya dan memakai Simple Past Tense.</p>
+
+  <h3 class="act-title">Activity 14</h3>
+  <p class="act-inst"><strong>Writing Project.</strong> Follow these steps.</p>
+  <ol class="steps">
+    <li>Make a group of 4.</li>
+    <li>Arrange your own recount text talking about your vacation you have ever had. Don't forget to follow the generic structures and language features of recount text.</li>
+    <li>Modify it in the form of 4 to 6 panels comic strips. (You may draw them manually or use the help of technology)</li>
+    <li>Create your comic as interesting as possible.</li>
+    <li>Show your work to your friends in the class.</li>
+  </ol>
+  <div class="comic-board" aria-label="Papan komik strip">
+    <div class="top">
+      <input type="text" placeholder="Title" aria-label="Judul komik">
+      <textarea placeholder="Your Text" aria-label="Teks recount"></textarea>
+    </div>
+    <div class="row1">
+      <textarea placeholder="Panel 1" aria-label="Panel 1"></textarea>
+      <textarea placeholder="Panel 2" aria-label="Panel 2"></textarea>
+    </div>
+    <div class="row2">
+      <textarea placeholder="Panel 3" aria-label="Panel 3"></textarea>
+      <textarea placeholder="Panel 4" aria-label="Panel 4"></textarea>
+      <textarea placeholder="Panel 5 (opsional)" aria-label="Panel 5"></textarea>
+    </div>
+  </div>
+  <ul class="check-list" id="projCheck">
+    <li><label><input type="checkbox"> Teks punya Orientation, Events, dan Reorientation</label></li>
+    <li><label><input type="checkbox"> Memakai Simple Past Tense</label></li>
+    <li><label><input type="checkbox"> Memakai time connectors (first, then, after that, finally)</label></li>
+    <li><label><input type="checkbox"> Komik terdiri dari 4–6 panel</label></li>
+  </ul>
+  <div class="feedback" id="fbProj"></div>
+  <div class="btn-row no-print"><button class="btn-ghost" id="printProj">Cetak / simpan PDF</button></div>
+</section>
+
+<!-- ================= KUIS / EVALUASI ================= -->
+<section class="page" id="kuis">
+  <span class="tag">Contoh Soal, Latihan Soal &amp; Evaluasi</span>
+  <h2>🎯 Kuis Recount Text</h2>
+  <div class="quiz-progress"><div class="quiz-progress-bar" id="quizProgressBar"></div></div>
+  <div id="quizContainer"></div>
+  <div class="quiz-result" id="quizResult">
+    <div class="eyebrow">Hasil Akhir</div>
+    <div class="big-score" id="bigScore">0/0</div>
+    <p id="scoreMessage"></p>
+    <button class="btn-ghost" id="retryQuiz">Coba Lagi</button>
+  </div>
+</section>
+
+<!-- ================= REFLEKSI ================= -->
+<section class="page" id="refleksi">
+  <span class="tag">Refleksi · Berkesadaran</span>
+  <h2>Jurnal Belajar &amp; Penilaian Diri</h2>
+  <div class="reflection-grid">
+    <div>
+      <label for="j1"><strong>Apa hal baru yang kamu pelajari hari ini tentang recount text?</strong></label>
+      <textarea class="journal" id="j1" placeholder="Tuliskan refleksimu di sini..."></textarea>
+    </div>
+    <div>
+      <label for="j2"><strong>Bagian mana yang paling menantang: menyimak, membaca, menulis, atau presentasi komik? Mengapa?</strong></label>
+      <textarea class="journal" id="j2" placeholder="Tuliskan refleksimu di sini..."></textarea>
+    </div>
+  </div>
+  <div class="self-rate">
+    <label for="r1" style="min-width:230px;">Seberapa yakin kamu membedakan struktur recount text?</label>
+    <input type="range" min="1" max="5" value="3" id="r1">
+    <output id="r1out">3</output>/5
+  </div>
+  <div class="self-rate">
+    <label for="r2" style="min-width:230px;">Seberapa yakin kamu menggunakan Simple Past Tense saat menulis?</label>
+    <input type="range" min="1" max="5" value="3" id="r2">
+    <output id="r2out">3</output>/5
+  </div>
+  <p style="margin-top:14px;"><strong>Dimensi Profil Lulusan yang kamu latih hari ini:</strong></p>
+  <div class="profile-dims">
+    <span class="chip">🤝 Kolaborasi — dialog &amp; proyek kelompok</span>
+    <span class="chip">🎯 Kemandirian — kuis &amp; jurnal mandiri</span>
+    <span class="chip">🎨 Kreativitas — komik strip recount</span>
+  </div>
+  <div class="partner-box">
+    <strong>Kemitraan Pembelajaran:</strong> Ceritakan kepada 1 teman pengalaman liburanmu dengan urutan orientation–events–reorientation. Di rumah, ceritakan juga pengalaman itu kepada orang tuamu sebagai latihan tambahan.
+  </div>
+</section>
+
+<!-- ================= KESIMPULAN ================= -->
+<section class="page" id="kesimpulan">
+  <span class="tag">Summary · Kesimpulan</span>
+  <h2>Recount Text: Summary</h2>
+  <p class="lead">Recount text is a text that retells events or experiences in the past.</p>
+
+  <ul class="summary-list">
+    <li><strong>1. Definition:</strong> Recount text tells about events or experiences that happened in the past. The purpose is to inform or entertain the reader by retelling what happened.</li>
+    <li><strong>2. Social function:</strong> to inform the reader about past events or experiences; to share and entertain by telling what happened.</li>
+    <li><strong>3. Generic structure:</strong> (1) Orientation — introduces who, when, where. (2) Series of Events — tells the events that happened in order. (3) Reorientation — gives a closing statement and the writer's feelings.</li>
+    <li><strong>4. Language features:</strong> Past tense (went, visited, watched); action verbs (played, cleaned, studied); time connectors (first, then, after that, next, finally); adverbs/adverbials of time (yesterday, last week, in the morning); nouns and pronouns (people, places, things); circumstances of time and place (on Saturday, at the park).</li>
+    <li><strong>6. Tips for writing recount text:</strong> think about the events you want to tell; make sure the events are in the correct order; use past tense and time connectors; end with your feelings or a closing statement.</li>
+    <li><strong>7. Key points:</strong> recount text tells about past events in order; it has three parts (Orientation, Series of Events, Reorientation); it uses past tense, action verbs, and time connectors to make the story clear.</li>
+  </ul>
+
+  <div class="text-box">
+    <div class="meta">5. Example of recount text</div>
+    <p><strong>Orientation:</strong> Last Sunday, I went to my grandmother's house with my family in the morning.</p>
+    <p><strong>Series of Events:</strong> First, we helped Grandma clean the yard. Then, we picked some vegetables in her garden. After that, Grandma cooked our favorite lunch. In the afternoon, we played board games together. Before we went home, Grandma gave us some fresh fruits from her garden.</p>
+    <p><strong>Reorientation:</strong> I had a wonderful time with my family. I felt happy and grateful because we could spend quality time together. I hope we can visit Grandma again soon.</p>
+  </div>
+
+  <svg class="concept-map" viewBox="0 0 700 300" role="img" aria-label="Peta konsep recount text">
+    <rect x="270" y="10" width="160" height="46" rx="10" fill="#2F6F6E"/>
+    <text x="350" y="38" text-anchor="middle" fill="#fff" font-family="Special Elite" font-size="14">RECOUNT TEXT</text>
+    <line x1="350" y1="56" x2="120" y2="120" stroke="#4A5A78" stroke-width="1.5"/>
+    <line x1="350" y1="56" x2="350" y2="120" stroke="#4A5A78" stroke-width="1.5"/>
+    <line x1="350" y1="56" x2="580" y2="120" stroke="#4A5A78" stroke-width="1.5"/>
+    <rect x="40" y="120" width="160" height="40" rx="8" fill="#C99A3E"/>
+    <text x="120" y="145" text-anchor="middle" font-family="Inter" font-size="12" fill="#22314A">Fungsi Sosial</text>
+    <rect x="270" y="120" width="160" height="40" rx="8" fill="#C99A3E"/>
+    <text x="350" y="145" text-anchor="middle" font-family="Inter" font-size="12" fill="#22314A">Struktur Teks</text>
+    <rect x="500" y="120" width="160" height="40" rx="8" fill="#C99A3E"/>
+    <text x="580" y="145" text-anchor="middle" font-family="Inter" font-size="12" fill="#22314A">Unsur Kebahasaan</text>
+    <line x1="350" y1="160" x2="230" y2="210" stroke="#4A5A78" stroke-width="1.2"/>
+    <line x1="350" y1="160" x2="350" y2="210" stroke="#4A5A78" stroke-width="1.2"/>
+    <line x1="350" y1="160" x2="470" y2="210" stroke="#4A5A78" stroke-width="1.2"/>
+    <rect x="150" y="210" width="160" height="40" rx="8" fill="#F1E7D4" stroke="#2F6F6E"/>
+    <text x="230" y="234" text-anchor="middle" font-family="Inter" font-size="11" fill="#22314A">Orientation</text>
+    <rect x="270" y="210" width="160" height="40" rx="8" fill="#F1E7D4" stroke="#2F6F6E"/>
+    <text x="350" y="234" text-anchor="middle" font-family="Inter" font-size="11" fill="#22314A">Series of Events</text>
+    <rect x="390" y="210" width="160" height="40" rx="8" fill="#F1E7D4" stroke="#2F6F6E"/>
+    <text x="470" y="234" text-anchor="middle" font-family="Inter" font-size="11" fill="#22314A">Reorientation</text>
+  </svg>
+
+  <p style="font-style:italic; color:var(--ink-soft);">Refleksi akhir: Recount text ada di sekitar kita — dalam diary, cerita liburan, bahkan laporan kegiatan sekolah. Semakin sering kita mengenali strukturnya, semakin mudah kita menulis dan memahami cerita orang lain.</p>
+
+  <div class="next-material">
+    <div><strong>Ulangi perjalananmu</strong><br><span style="font-size:0.85rem;">Kembali ke awal dan coba ceritakan pengalamanmu dengan struktur recount text.</span></div>
+    <a href="#beranda">Kembali ke Beranda →</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div><strong>Bustanul Ulum, M.Pd</strong> — Guru Bahasa Inggris</div>
+  <div class="meta">SMP Negeri 1 Dlingo · Kelas IX · Semester Ganjil · Tahun Pelajaran 2026/2027</div>
+  <div class="meta">Media Pembelajaran Interaktif — Chapter 3: Recount Text (Retelling Past Events)</div>
+</footer>
+
+<script>
+// ---------- Accessibility: text size toggle ----------
+document.getElementById('a11y-toggle').addEventListener('click', function(){
+  document.body.classList.toggle('large-text');
+  this.setAttribute('aria-pressed', document.body.classList.contains('large-text'));
+});
+
+// ---------- Nav visited-tracking via IntersectionObserver ----------
+const navLinks = Array.from(document.querySelectorAll('nav.route a'));
+const sections = navLinks.map(a => document.querySelector(a.getAttribute('href')));
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const link = navLinks.find(a => a.getAttribute('href') === '#' + entry.target.id);
+    if(!link) return;
+    if(entry.isIntersecting){ link.classList.add('active'); link.classList.add('visited'); }
+    else { link.classList.remove('active'); }
+  });
+}, {rootMargin: '-40% 0px -50% 0px'});
+sections.forEach(s => s && io.observe(s));
+
+// ---------- Helper umum ----------
+function $(id){ return document.getElementById(id); }
+function checkFields(scope, fbEl, okMsg){
+  const fields = scope.querySelectorAll('[data-answer]');
+  let correct = 0;
+  fields.forEach(f => {
+    const val = f.value.trim().toLowerCase();
+    const ok = f.dataset.answer.toLowerCase().split('|').includes(val);
+    f.classList.toggle('is-ok', ok);
+    f.classList.toggle('is-no', !ok && val !== '');
+    if(ok) correct++;
+  });
+  fbEl.classList.remove('ok','no');
+  const all = correct === fields.length;
+  fbEl.classList.add('show', all ? 'ok' : 'no');
+  fbEl.textContent = all ? okMsg : `Kamu menjawab benar ${correct} dari ${fields.length}. Perbaiki jawaban yang bertanda merah, lalu periksa lagi.`;
+  return correct;
+}
+
+// ---------- Tab materi ----------
+document.querySelectorAll('.tabs button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const tabs = btn.parentElement.querySelectorAll('button');
+    tabs.forEach(b => b.setAttribute('aria-selected', b === btn));
+    const section = btn.closest('section');
+    section.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('show', p.id === btn.dataset.tab));
+  });
+});
+
+// ---------- Peta Struktur ----------
+const mapDetails = {
+  orientation: "Orientation memperkenalkan siapa (who), kapan (when), dan di mana (where) peristiwa terjadi. Pada teks ini: penulis dan orang tuanya (who), Last Sunday in the morning (when), rumah nenek di desa kecil (where).",
+  events: "Series of Events menceritakan rangkaian kejadian secara berurutan, ditandai penghubung waktu seperti first, then, after that, in the afternoon, dan before.",
+  reorientation: "Reorientation menutup cerita dengan pernyataan penutup dan perasaan penulis, misalnya 'I had a wonderful time' dan 'I felt happy and grateful'."
+};
+const nodeButtons = document.querySelectorAll('.node-btn');
+const mapDetail = $('mapDetail');
+const structParts = document.querySelectorAll('.struct-part');
+nodeButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const part = btn.dataset.part;
+    nodeButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    structParts.forEach(p => p.classList.toggle('hl', p.dataset.part === part));
+    mapDetail.textContent = mapDetails[part];
+    mapDetail.classList.add('show');
+  });
+});
+
+// ---------- Activity 1 & 2 (Listen and Speak) ----------
+const act1 = [
+  ["went","want","one"],["hell","held","heal"],["see","saw","seen"],["walk","walked","work"],
+  ["buy","bought","bag"],["joined","join","jean"],["one","won","went"],["eat","ate","eaten"],
+  ["was","wash","is"],["hope","hop","huff"]
+];
+document.querySelector('#act1 tbody').innerHTML = act1.map((row,i) =>
+  `<tr><td class="c">${i+1}</td>${row.map(w => `<td><label><input type="checkbox"> ${w}</label></td>`).join('')}</tr>`).join('');
+
+const act2 = [
+  "Amanda went to the book fair with her older sister.",
+  "The book fair was held in a shopping mall.",
+  "Amanda bought a novel and an English comic.",
+  "The prices of the books were affordable for Amanda.",
+  "The visitors could find comics, novels, and magazines at the book fair.",
+  "A cute bookmark was the prize from the quiz.",
+  "The quiz questions were difficult for Amanda.",
+  "Amanda did not enjoy her visit to the book fair.",
+  "Before going home, the two sisters enjoyed some food at the food court.",
+  "The experience made Amanda want to visit the book fair again next year."
+];
+document.querySelector('#act2 tbody').innerHTML = act2.map((s,i) =>
+  `<tr><td class="c">${i+1}.</td><td>${s}</td>
+   <td class="c"><input type="radio" name="a2-${i}" aria-label="True nomor ${i+1}"></td>
+   <td class="c"><input type="radio" name="a2-${i}" aria-label="False nomor ${i+1}"></td></tr>`).join('');
+
+// ---------- Simulasi Detektif (dapat dipakai ulang) ----------
+function makeDetective(opts){
+  const el = $(opts.textId);
+  el.innerHTML = opts.paragraphs.map(p =>
+    '<p style="margin:0 0 10px;">' + p.split(' ').map(t => {
+      const clean = t.replace(/[^A-Za-z']/g,'').toLowerCase();
+      if(!clean) return t;
+      return `<span class="word" data-word="${clean}">${t}</span>`;
+    }).join(' ') + '</p>').join('');
+  const found = {};
+  Object.keys(opts.sets).forEach(k => found[k] = new Set());
+  const clsMap = {verb:'correct-verb', connector:'correct-connector', feeling:'correct-adj'};
+  let activeCat = opts.singleCat || null;
+
+  function updateScore(){
+    Object.keys(opts.sets).forEach(k => {
+      $(opts.scoreIds[k]).textContent = found[k].size + '/' + opts.sets[k].size;
+    });
+  }
+  updateScore();
+
+  if(opts.catsId){
+    const btns = $(opts.catsId).querySelectorAll('.cat-btn');
+    btns.forEach(b => b.addEventListener('click', () => {
+      activeCat = b.dataset.cat;
+      btns.forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+    }));
+  }
+
+  el.addEventListener('click', e => {
+    const span = e.target.closest('.word');
+    if(!span || !activeCat) return;
+    const word = span.dataset.word;
+    const set = opts.sets[activeCat];
+    if(set.has(word)){
+      if(!found[activeCat].has(word)){
+        found[activeCat].add(word);
+        el.querySelectorAll(`.word[data-word="${word}"]`).forEach(s => s.classList.add(clsMap[activeCat]));
+        updateScore();
+      }
+    } else {
+      span.classList.add('wrong');
+      setTimeout(() => span.classList.remove('wrong'), 400);
+    }
+  });
+}
+
+makeDetective({
+  textId:'detectiveText', catsId:'detCats',
+  paragraphs:[
+    "Last Sunday, I went to my grandmother's house with my parents in the morning. She lives in a small village about one hour from our home.",
+    "First, we helped Grandma clean the yard. Then, we picked some vegetables in her garden. After that, Grandma cooked our favorite lunch. In the afternoon, we talked and played board games together. Before we went home, Grandma gave us some fresh fruits from her garden.",
+    "I had a wonderful time with my family. I felt happy and grateful because we could spend quality time together. I hope we can visit Grandma again soon."
+  ],
+  sets:{
+    verb:new Set(["went","helped","picked","cooked","talked","played","gave","had","felt"]),
+    connector:new Set(["first","then","after","before"]),
+    feeling:new Set(["wonderful","happy","grateful"])
+  },
+  scoreIds:{verb:'scoreVerb', connector:'scoreConn', feeling:'scoreFeel'}
+});
+
+// ---------- Activity 5 ----------
+makeDetective({
+  textId:'act5Text', singleCat:'verb',
+  paragraphs:[
+    "Last month, I had a very special experience at my school. I was chosen to be the Master of Ceremony at the Grade 9 graduation ceremony. I felt surprised and very nervous because it was my first time.",
+    "After I got the role, I tried to prepare myself well. I practiced every day after school. I read the script many times and tried to pronounce the words correctly. Sometimes, I made mistakes and forgot some parts. I also felt tired and wanted to stop, but I kept practicing. My teacher helped me and gave me advice. She told me to speak slowly and clearly.",
+    "At home, I practiced in front of a mirror. I also asked my parents to listen to me. They gave me support and said I could do it. Step by step, I felt more confident. On the day of the event, I still felt nervous, but I tried to be calm. I started the program and guided it until the end.",
+    "At the end of the event, I felt very happy and proud. It was an unforgettable experience. I learned that hard work can help me do something difficult."
+  ],
+  sets:{ verb:new Set(["had","was","felt","got","tried","practiced","read","made","forgot","wanted","kept","helped","gave","told","asked","said","started","guided","learned"]) },
+  scoreIds:{verb:'scoreAct5'}
+});
+
+// ---------- Activity 6 ----------
+const vocab = [
+  {w:"important", meaning:"penting", syn:"special", loc:"Paragraf 1, kalimat 1", given:true},
+  {w:"worried", meaning:"cemas / khawatir", syn:"nervous", loc:"Paragraf 1, kalimat 3"},
+  {w:"get ready", meaning:"bersiap", syn:"prepare", loc:"Paragraf 2, kalimat 1"},
+  {w:"trained", meaning:"berlatih", syn:"practiced", loc:"Paragraf 2, kalimat 2"},
+  {w:"properly", meaning:"dengan benar", syn:"correctly", loc:"Paragraf 2, kalimat 3"},
+  {w:"exhausted", meaning:"kelelahan", syn:"tired", loc:"Paragraf 2, kalimat 5"},
+  {w:"talk", meaning:"berbicara", syn:"speak", loc:"Paragraf 2, kalimat 7"},
+  {w:"mother and father", meaning:"orang tua", syn:"parents", loc:"Paragraf 3, kalimat 2"},
+  {w:"help", meaning:"membantu / mendukung", syn:"support", loc:"Paragraf 3, kalimat 3"},
+  {w:"sure", meaning:"yakin", syn:"confident", loc:"Paragraf 3, kalimat 4"},
+  {w:"glad", meaning:"senang", syn:"happy", loc:"Paragraf 4, kalimat 1"},
+  {w:"hard", meaning:"sulit", syn:"difficult", loc:"Paragraf 4, kalimat 3"}
+];
+const synOptions = vocab.map(v => v.syn).sort();
+document.querySelector('#act6 tbody').innerHTML = vocab.map((v,i) => {
+  if(v.given) return `<tr><td class="c">1.</td><td>${v.w}</td><td><em>${v.meaning}</em></td><td><em>${v.syn}</em></td><td class="key">${v.loc}</td></tr>`;
+  return `<tr><td class="c">${i+1}.</td><td>${v.w}</td>
+    <td><input class="txt" type="text" aria-label="Arti ${v.w}" placeholder="arti..."></td>
+    <td><select class="blank" data-answer="${v.syn}" aria-label="Sinonim ${v.w}"><option value="">— pilih —</option>${synOptions.map(o => `<option>${o}</option>`).join('')}</select></td>
+    <td class="key" data-key="${v.meaning} · ${v.loc}"></td></tr>`;
+}).join('');
+$('checkAct6').addEventListener('click', () => {
+  checkFields($('act6'), $('fbAct6'), "Kerja bagus! Semua sinonim tepat.");
+  document.querySelectorAll('#act6 td[data-key]').forEach(td => td.textContent = td.dataset.key);
+});
+
+// ---------- Activity 7 ----------
+const events7 = [
+  {l:"a", t:"My parents listened to my practice at home and gave me support.", n:6},
+  {l:"b", t:"I practiced speaking in front of a mirror at home.", n:5},
+  {l:"c", t:"I was chosen to be the Master of Ceremony at the Grade 9 graduation ceremony.", n:1},
+  {l:"d", t:"In the end, I felt happy and proud of myself.", n:8},
+  {l:"e", t:"I practiced every day after school and learned to pronounce the words correctly.", n:2},
+  {l:"f", t:"My teacher gave me advice to speak slowly and clearly.", n:4},
+  {l:"g", t:"On the day of the event, I guided the program until the end.", n:7},
+  {l:"h", t:"Sometimes, I felt tired and wanted to stop, but I kept practicing.", n:3}
+];
+$('act7').innerHTML = events7.map(e =>
+  `<li><span><span class="letter">${e.l}.</span>${e.t}</span>
+   <select class="blank" data-answer="${e.n}" aria-label="Urutan kejadian ${e.l}"><option value="">urutan</option>${[1,2,3,4,5,6,7,8].map(n => `<option>${n}</option>`).join('')}</select></li>`).join('');
+$('checkAct7').addEventListener('click', () => checkFields($('act7'), $('fbAct7'), "Tepat! Urutan kejadiannya benar."));
+
+// ---------- Activity 8 ----------
+const match8 = [
+  ["Save","c"],["Connect","d"],["Storage","b"],["Portable","j"],["Powerful","e"],
+  ["Improve","i"],["Popular","g"],["Search","a"],["Upload","f"],["Invent","h"]
+];
+const defs8 = {
+  a:"To look for information", b:"A place to keep things", c:"To keep data for future use",
+  d:"To join something together", e:"Strong and effective", f:"To move files to the internet",
+  g:"To become well-known", h:"To create something new", i:"To make something better", j:"Easy to carry or move"
+};
+document.querySelector('#act8 tbody').innerHTML = match8.map((m,i) =>
+  `<tr><td class="c">${i+1}.</td><td>${m[0]}</td>
+   <td><select class="blank" data-answer="${m[1]}" aria-label="Arti ${m[0]}"><option value="">—</option>${Object.keys(defs8).map(k => `<option>${k}</option>`).join('')}</select></td></tr>`).join('');
+$('act8defs').innerHTML = Object.keys(defs8).map(k => `<li><b>${k}.</b>${defs8[k]}</li>`).join('');
+$('checkAct8').addEventListener('click', () => checkFields($('act8'), $('fbAct8'), "Luar biasa! Semua pasangan kata tepat."));
+
+// ---------- Activity 11 ----------
+const past11 = [
+  ["📝","He","(do)","his homework last night.","did"],
+  ["🪟","She","(open)","the window this morning.","opened"],
+  ["🥣","Bobby","(eat)","breakfast before he went to school.","ate"],
+  ["🚶","She","(walk)","to the nearest bookstore yesterday.","walked"],
+  ["🗑️","Andy","(throw)","the trash in the afternoon.","threw"],
+  ["🎧","Bunga","(listen)","to music after school.","listened"],
+  ["📺","My brother","(watch)","a movie on TV last night.","watched"],
+  ["🍽️","Mother","(wash)","the dishes after dinner.","washed"],
+  ["📖","He","(read)","a book before he slept.","read"]
+];
+$('act11').innerHTML = past11.map((p,i) =>
+  `<div class="pic-item"><div class="emoji" aria-hidden="true">${p[0]}</div>
+   <div>${i+1}. ${p[1]} <input class="txt inline" type="text" data-answer="${p[4]}" style="width:110px;" aria-label="Jawaban nomor ${i+1}"> ${p[3]}
+   <div class="hint">kata kerja: ${p[2]}</div></div></div>`).join('');
+$('checkAct11').addEventListener('click', () => checkFields($('act11'), $('fbAct11'), "Kerja bagus! Semua kalimat Simple Past Tense tepat."));
+
+// ---------- Activity 12 ----------
+const pics12 = [
+  ["📖","Picture 1","hint: read a book"],
+  ["🧹","Picture 2","hint: sweep the yard"],
+  ["🍳","Picture 3","hint: cook in the kitchen"],
+  ["⚽","Picture 4","hint: play football"],
+  ["🌱","Picture 5","hint: water the plants"]
+];
+$('act12').innerHTML = pics12.map((p,i) =>
+  `<div class="write-item"><div><div class="emoji" aria-hidden="true">${p[0]}</div><div style="text-align:center; font-family:var(--font-ui); font-size:0.78rem; color:var(--ink-soft);">${p[1]}<br>${p[2]}</div></div>
+   <textarea aria-label="Dua kalimat untuk ${p[1]}" placeholder="Write 2 sentences using Simple Past Tense..."></textarea></div>`).join('');
+
+// ---------- Activity 13 ----------
+$('showSample13').addEventListener('click', () => {
+  document.querySelectorAll('#act13 input').forEach(i => i.value = i.dataset.sample);
+});
+$('clear13').addEventListener('click', () => {
+  document.querySelectorAll('#act13 input').forEach(i => i.value = '');
+});
+
+// ---------- Activity 14 ----------
+const projBoxes = document.querySelectorAll('#projCheck input');
+projBoxes.forEach(b => b.addEventListener('change', () => {
+  const n = Array.from(projBoxes).filter(x => x.checked).length;
+  const fb = $('fbProj');
+  fb.classList.remove('ok','no');
+  fb.classList.add('show', n === projBoxes.length ? 'ok' : 'no');
+  fb.textContent = n === projBoxes.length
+    ? "Semua kriteria terpenuhi. Komikmu siap dipresentasikan di depan kelas!"
+    : `${n} dari ${projBoxes.length} kriteria terpenuhi. Lengkapi sisanya sebelum presentasi.`;
+}));
+$('printProj').addEventListener('click', () => window.print());
+
+// ---------- Kuis ----------
+const passages = {
+  embarrass: `<p>Last Wednesday was one of the most embarrassing days of my life. Our English teacher asked each student to prepare a short presentation about their favourite hobby. I had prepared mine well the night before, and I felt confident.</p>
+<p>When it was my turn, I stood in front of the class and started speaking. At first, everything went well, but suddenly, I forgot what I wanted to say. My mind went completely blank. I tried to look at my notes, but I had left them at my desk. Everyone was staring at me, waiting for me to continue. I felt so nervous that I started sweating and my hands were shaking.</p>
+<p>Then, to make things worse, I accidentally knocked over the teacher's water bottle from the table. The water spilled onto her papers. I quickly apologized, but I felt so embarrassed. The teacher told me to sit down and try again next week. I was really upset the whole day. I promised myself to stay calm and double-check my notes next time.</p>`,
+  story: `<p>Last month, I joined a storytelling competition in the city. When I arrived at the hall, I saw many talented competitors. Some of them spoke loudly and confidently, and some had amazing costumes. I felt my heart beating fast. My hands were cold. Then, my teacher whispered, "Do your best." My parents smiled proudly from the audience, and my friends waved excitedly. Their support made me feel braver. I took a deep breath and reminded myself that I had worked hard for this moment.</p>
+<p>When it was my turn, I walked to the stage slowly. At first, my voice shook a little, but after a few sentences, I felt more confident. I used hand gestures, changed my voice for different characters, and tried to make the story fun. By the time I finished, the audience clapped loudly. I felt so relieved and happy.</p>
+<p>Later, the judges announced the results. I became the runner-up! I didn't win first place, but I was proud of myself for standing in front of so many people and doing my best.</p>`,
+  resilience: `<p>When I was a child, my younger brother and I often got into trouble with our stepfather. Sometimes we didn't even know what we had done wrong, but we were still punished. This went on for years until I grew stronger and was able to stop him. Our mother could not protect us because she had many problems of her own.</p>
+<p>As I grew older, life was not always easy. I lost people I loved and faced difficult times, but I also found happiness later. I studied hard, worked in different jobs, and built a good life with my family. I always tried to treat my children with kindness and never with violence.</p>
+<p>My brother's life was more difficult. He left school early and made bad choices. One day, a very sad tragedy happened in his family. That painful moment changed him. With support, he decided to live better. He worked hard, stayed away from alcohol, and cared for his family until he passed away years later.</p>
+<p>This story shows me that even after very hard times, people can change and grow stronger. That is what resilience really means.</p>`,
+  improve: `<p>Last summer, I decided to improve myself and become a better person. First, I made some simple goals for my personal life and my studies. I wanted to manage my time better and become more disciplined. To stay healthy, I also started exercising for about 30 minutes every day. Besides that, I ate healthier food and drank more water. After a few weeks, I felt healthier, happier, and more energetic.</p>
+<p>I also tried to improve my mental well-being. When I felt stressed, I practiced relaxation and positive thinking. Sometimes, I read simple self-help books to learn new ideas about personal growth. In addition, I asked my friends and family for advice. Their suggestions helped me understand my weaknesses and improve my habits little by little.</p>
+<p>During the summer, I wrote my experiences in a journal. I wrote about my achievements, problems, and lessons that I learned every day. At the end of the summer, I noticed many positive changes in myself. I became more confident, focused, and responsible. Although the journey was not always easy, I felt proud because I kept trying to improve myself every day.</p>`,
+  maya: `<p>Last July, Maya saw a poster for a local art competition with the theme "My Community." Maya had always liked to draw, and she would like to join a competition with her unique art.</p>
+<p>She was excited, but then she felt discouraged. She didn't have fancy art supplies to compete, unlike other people. But then, she decided to do whatever she could. First, she created homemade paints made from tea and spices. Then, she found a large, smooth piece of cardboard to use as her canvas and used bits of charcoal from her fireplace for the dark lines.</p>
+<p>After all the tools and supplies were ready, she started creating her design. She transferred her sketch to the canvas. She chose to paint a big, lively picture of her neighborhood at a street festival. Every day after school for weeks, Maya worked on her painting. Her brush moved smoothly to color her painting. It was hard work, but she kept going because she was determined to create something beautiful.</p>
+<p>A few weeks after she submitted her painting, the results were announced. A letter arrived in the mail. Maya could not contain her excitement. Her painting won the second position. Maya felt really happy.</p>`
+};
+
+/* Catatan guru: kunci Contoh Soal (no. 1–5) diambil dari PDF.
+   Kunci Latihan Soal (no. 6–15) dan Evaluasi tidak dicantumkan di PDF, sehingga disusun
+   berdasarkan isi teks. Mohon diperiksa kembali, terutama no. 12 dan Evaluasi no. 1. */
+const quizData = [
+  // ----- Contoh Soal -----
+  {group:"Contoh Soal", passage:"embarrass", type:"single", q:"What is the topic of the text?",
+   options:["A student who had a bad day at school.","A student who got into trouble at school.","A student who forgot her speech in class.","A student who felt nervous during a presentation."], answer:2,
+   exp:"Teksnya bercerita tentang pengalaman penulis melakukan presentasi di kelas (paragraf 1). Lalu ia lupa pada bagian-bagian tertentu dalam presentasi atau pidatonya (paragraf 2)."},
+  {group:"Contoh Soal", passage:"embarrass", type:"single", q:"What happened when the writer gave her speech?",
+   options:["She read from notes and made no mistakes.","She forgot her notes and froze in front of class.","She gave her best and finished the speech well.","She smiled and received applause from classmates."], answer:1,
+   exp:"Di paragraf 2 terdapat kalimat \"I tried to look at my notes, but I had left them at my desk\" (Aku coba melihat catatanku, tetapi aku meninggalkannya di mejaku)."},
+  {group:"Contoh Soal", passage:"embarrass", type:"single", q:"What is the main idea of the second paragraph?",
+   options:["The writer forgot her words and felt very nervous.","The writer spoke confidently and finished her speech.","The writer left her notes and laughed in front of class.","The writer asked the teacher to help with her speech."], answer:0,
+   exp:"Paragraf 2 menceritakan insiden ketika penulis maju di depan kelas: awalnya semua berjalan baik, tetapi di tengah presentasi ia tiba-tiba lupa apa yang harus dikatakan."},
+  {group:"Contoh Soal", passage:"embarrass", type:"tf", q:"Based on the text, decide whether each statement is TRUE or FALSE.",
+   items:[{s:"The writer spilled her drink on a classmate's desk.", a:false},{s:"The writer felt nervous when everyone was staring at her.", a:true},{s:"The teacher asked students to present about their favorite hobby.", a:true}],
+   exp:"Pernyataan 1 (False): penulis menumpahkan air minum gurunya. Pernyataan 2 (True): penulis merasa gugup karena semua temannya menatapnya. Pernyataan 3 (True): gurunya menyuruh presentasi tentang hobi/kesukaan."},
+  {group:"Contoh Soal", passage:"embarrass", type:"single", q:"Which of the following shows the correct sequence of the story?",
+   options:["The teacher asked the student to prepare a short presentation. → The writer could not remember any word in her speech. → The writer felt so nervous because everyone was staring at her. → The teacher asked her to try again next week.",
+            "The teacher asked the student to prepare a short presentation. → The writer felt so nervous because she forgot what to say. → The writer spilled her teacher's drink on her paper. → The teacher asked her to try again next week.",
+            "The teacher asked the student to prepare a short presentation. → The writer spilled her drink on her teacher's note. → The writer felt so nervous. → The teacher asked her to try again next week.",
+            "The teacher asked the student to prepare a short presentation. → The writer felt so nervous because she forgot what to say. → The teacher asked her to try again next week. → The writer felt so nervous."], answer:1,
+   exp:"Urutan yang benar: guru meminta siswa melakukan presentasi → penulis lupa apa yang harus dikatakan sehingga gugup → penulis menumpahkan minuman gurunya → gurunya memintanya mengulangi minggu depan."},
+
+  // ----- Latihan Soal: Text 1-3 -----
+  {group:"Latihan Soal · Text 1–3", passage:"story", type:"single", q:"The text tells us about the writer's ....",
+   options:["moment when she won a storytelling competition.","experience in joining a storytelling competition.","feeling when she saw the talented competitors.","efforts in preparing a storytelling competition."], answer:1,
+   exp:"Teks menceritakan seluruh pengalaman penulis mengikuti lomba mendongeng, bukan hanya perasaannya atau persiapannya."},
+  {group:"Latihan Soal · Text 1–3", passage:"story", type:"single", q:"From the text, we know that the writer ...",
+   options:["realized that the writer was confident after getting support.","felt that other participants were much better and talented.","was very nervous because she didn't prepare well before.","was disappointed because she didn't win first place."], answer:0,
+   exp:"Dukungan orang tua dan teman membuat penulis merasa lebih berani, lalu ia menjadi lebih percaya diri saat tampil. Ia sudah berlatih keras dan bangga meski hanya menjadi runner-up."},
+  {group:"Latihan Soal · Text 1–3", passage:"story", type:"multi", pick:2, q:"Which statements are in line with the text? Choose two correct answers.",
+   options:["The writer saw many participants when arriving at the hall.","The writer felt confident when she walked to the stage.","The writer became the champion of the competition.","The writer felt braver seeing her parents and friends."], answers:[0,3],
+   exp:"Penulis melihat banyak peserta saat tiba, dan merasa lebih berani berkat orang tua serta temannya. Saat naik panggung suaranya masih bergetar, dan ia hanya menjadi runner-up, bukan juara."},
+
+  // ----- Latihan Soal: Text 4-6 -----
+  {group:"Latihan Soal · Text 4–6", passage:"resilience", type:"single", q:"What is the main idea of the first paragraph?",
+   options:["The writer's stepfather was kind and fair to him.","Their mother always protected the writer from problems.","The writer enjoyed a happy childhood with his stepfather.","The writer and his brother were often got problems at home."], answer:3,
+   exp:"Paragraf pertama membahas penulis dan adiknya yang sering mendapat masalah dan hukuman dari ayah tirinya."},
+  {group:"Latihan Soal · Text 4–6", passage:"resilience", type:"single", q:"\"As I grew older, life was not always easy.\" (Paragraph 2). What does the underlined phrase \"life was not always easy\" mean?",
+   options:["The writer never had any problems.","The writer only enjoyed good times.","The writer faced many challenges.","The writer's life was always easy."], answer:2,
+   exp:"\"Life was not always easy\" berarti hidup tidak selalu mudah, yaitu penulis menghadapi banyak tantangan."},
+  {group:"Latihan Soal · Text 4–6", passage:"resilience", type:"tf", q:"After reading the text, the readers will probably ....",
+   items:[{s:"realize that kindness is better than violence.", a:true},{s:"believe that people can change after mistakes.", a:true},{s:"think resilience means giving up when life is hard.", a:false}],
+   exp:"Pembaca akan menyadari bahwa kebaikan lebih baik daripada kekerasan (True) dan bahwa orang bisa berubah (True). Resilience justru berarti bangkit, bukan menyerah (False)."},
+
+  // ----- Latihan Soal: Text 7-10 -----
+  {group:"Latihan Soal · Text 7–10", passage:"improve", type:"single", q:"What does the text tell us about?",
+   options:["Reflecting of the writer's journey.","Becoming the writer's better version.","Boosting the writer's physical well-being.","Improving the writer's mental well-being."], answer:1,
+   exp:"Seluruh teks menceritakan usaha penulis menjadi versi dirinya yang lebih baik: membuat target, berolahraga, menjaga kesehatan mental, dan menulis jurnal."},
+  {group:"Latihan Soal · Text 7–10", passage:"improve", type:"single", q:"What can we infer from the text?",
+   options:["The writer improved herself without help from other people.","The writer understood that self-improvement was always easy.","The writer believed that change needed effort and consistency.","The writer became less confident after trying to improve herself."], answer:2,
+   exp:"Penulis tetap berusaha setiap hari meski perjalanannya \"not always easy\", sehingga perubahan membutuhkan usaha dan konsistensi. Ia juga meminta saran teman dan keluarga."},
+  {group:"Latihan Soal · Text 7–10", passage:"improve", type:"tf", q:"What did the writer do to improve herself?",
+   items:[{s:"She exercised regularly and ate healthier food.", a:true},{s:"She practiced relaxation and positive thinking.", a:true},{s:"She spent all her time playing games at home.", a:false}],
+   exp:"Penulis berolahraga dan makan lebih sehat (True), berlatih relaksasi dan berpikir positif (True), dan tidak menghabiskan waktunya untuk bermain game (False)."},
+  {group:"Latihan Soal · Text 7–10", passage:"improve", type:"multi", pick:2, q:"\"I also tried to improve my mental well-being.\" What does \"mental well-being\" mean? (Choose more than one correct answer)",
+   options:["a busy schedule with many activities","physical strength from regular exercise","a healthy and positive condition of the mind","the ability to handle stress and emotions well"], answers:[2,3],
+   exp:"Mental well-being adalah kondisi pikiran yang sehat dan positif, serta kemampuan mengelola stres dan emosi."},
+
+  // ----- Evaluation -----
+  {group:"Evaluation", passage:"maya", type:"single", q:"The text is mainly about Maya's effort in ....",
+   options:["making art supplies using household items","getting art supplies to win a contest","joining a community art festival","winning a local art competition"], answer:0,
+   exp:"Inti teks adalah usaha Maya yang tidak punya perlengkapan seni mahal lalu membuat cat dari teh dan rempah, kanvas dari kardus, dan garis gelap dari arang. Memenangkan lomba hanyalah hasil akhirnya."}
+];
+
+let currentQ = 0, quizScore = 0, answeredCount = 0;
+const quizContainer = $('quizContainer');
+
+function renderQuiz(){
+  currentQ = 0; quizScore = 0; answeredCount = 0;
+  quizContainer.innerHTML = '';
+  quizData.forEach((item, qi) => {
+    const prev = quizData[qi-1];
+    const firstOfPassage = !prev || prev.passage !== item.passage;
+    const wrap = document.createElement('div');
+    wrap.className = 'quiz-q' + (qi === 0 ? ' active' : '');
+    wrap.dataset.qi = qi;
+    let body = '';
+    if(item.type === 'single'){
+      body = item.options.map((o,oi) => `<button class="opt-btn" data-oi="${oi}">${o}</button>`).join('');
+    } else if(item.type === 'multi'){
+      body = `<div class="quiz-hint">Pilih ${item.pick} jawaban.</div>` +
+        item.options.map((o,oi) => `<label class="multi-opt"><input type="checkbox" value="${oi}"> <span>${o}</span></label>`).join('') +
+        `<button class="btn-primary check-btn">Periksa Jawaban</button>`;
+    } else {
+      body = item.items.map((it,ti) => `<div class="tf-row" data-ti="${ti}"><span>${it.s}</span>
+        <span class="tf-btns"><button data-v="true">True</button><button data-v="false">False</button></span></div>`).join('') +
+        `<button class="btn-primary check-btn" disabled>Periksa Jawaban</button>`;
+    }
+    wrap.innerHTML = `<div class="q-group">${item.group} · Soal ${qi+1} dari ${quizData.length}</div>
+      <details class="passage" ${firstOfPassage ? 'open' : ''}><summary>Teks bacaan</summary>${passages[item.passage]}</details>
+      <h3>${qi+1}. ${item.q}</h3>${body}
+      <div class="explain"><strong>Pembahasan:</strong> ${item.exp}
+        <div style="margin-top:10px;"><button class="btn-primary next-btn">${qi < quizData.length-1 ? 'Soal berikutnya' : 'Lihat hasil'}</button></div></div>`;
+    quizContainer.appendChild(wrap);
+    attachHandlers(wrap, item, qi);
+  });
+  updateProgress();
+}
+
+function finishQuestion(wrap, correct){
+  if(correct) quizScore++;
+  answeredCount++;
+  wrap.querySelector('.explain').classList.add('show');
+  updateProgress();
+}
+
+function attachHandlers(wrap, item, qi){
+  wrap.querySelector('.next-btn').addEventListener('click', () => {
+    if(qi < quizData.length - 1){
+      wrap.classList.remove('active');
+      quizContainer.querySelector(`.quiz-q[data-qi="${qi+1}"]`).classList.add('active');
+      currentQ = qi + 1;
+      updateProgress();
+      $('kuis').scrollIntoView({behavior:'smooth', block:'start'});
+    } else { showResult(); }
+  });
+
+  if(item.type === 'single'){
+    const btns = wrap.querySelectorAll('.opt-btn');
+    btns.forEach(btn => btn.addEventListener('click', () => {
+      const oi = parseInt(btn.dataset.oi);
+      btns.forEach(b => b.disabled = true);
+      if(oi === item.answer){ btn.classList.add('correct'); }
+      else { btn.classList.add('incorrect'); btns[item.answer].classList.add('correct'); }
+      finishQuestion(wrap, oi === item.answer);
+    }));
+  } else if(item.type === 'multi'){
+    const boxes = wrap.querySelectorAll('input[type=checkbox]');
+    wrap.querySelector('.check-btn').addEventListener('click', function(){
+      const chosen = Array.from(boxes).filter(b => b.checked).map(b => parseInt(b.value));
+      if(chosen.length === 0) return;
+      const ok = chosen.length === item.answers.length && chosen.every(c => item.answers.includes(c));
+      boxes.forEach(b => {
+        const i = parseInt(b.value);
+        const label = b.closest('.multi-opt');
+        b.disabled = true;
+        if(item.answers.includes(i)) label.classList.add('correct');
+        else if(b.checked) label.classList.add('incorrect');
+      });
+      this.disabled = true;
+      finishQuestion(wrap, ok);
+    });
+  } else {
+    const rows = wrap.querySelectorAll('.tf-row');
+    const checkBtn = wrap.querySelector('.check-btn');
+    rows.forEach(row => row.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+      row.querySelectorAll('button').forEach(x => x.classList.remove('sel'));
+      b.classList.add('sel');
+      row.dataset.v = b.dataset.v;
+      checkBtn.disabled = !Array.from(rows).every(r => r.dataset.v);
+    })));
+    checkBtn.addEventListener('click', function(){
+      let ok = true;
+      rows.forEach((row,ti) => {
+        const right = String(item.items[ti].a) === row.dataset.v;
+        row.classList.add(right ? 'correct' : 'incorrect');
+        row.querySelectorAll('button').forEach(b => b.disabled = true);
+        if(!right) ok = false;
+      });
+      this.disabled = true;
+      finishQuestion(wrap, ok);
+    });
+  }
+}
+
+function updateProgress(){
+  $('quizProgressBar').style.width = (answeredCount / quizData.length * 100) + '%';
+}
+
+function showResult(){
+  $('quizProgressBar').style.width = '100%';
+  quizContainer.querySelectorAll('.quiz-q').forEach(q => q.classList.remove('active'));
+  $('quizResult').classList.add('show');
+  $('bigScore').textContent = quizScore + '/' + quizData.length;
+  const r = quizScore / quizData.length;
+  let msg;
+  if(r === 1) msg = "Luar biasa! Kamu benar-benar detektif bahasa recount text sejati.";
+  else if(r >= 0.85) msg = "Bagus sekali! Sedikit lagi kamu sempurna, coba baca ulang pembahasan yang masih kurang tepat.";
+  else if(r >= 0.6) msg = "Kerja yang baik! Pelajari kembali bagian Let's Build dan Simulasi Detektif Bahasa untuk memperkuat pemahamanmu.";
+  else msg = "Jangan menyerah! Kembali ke bagian Let's Build dan latihan membaca, lalu coba lagi.";
+  $('scoreMessage').textContent = msg;
+}
+
+$('retryQuiz').addEventListener('click', () => {
+  $('quizResult').classList.remove('show');
+  renderQuiz();
+});
+renderQuiz();
+
+// ---------- Refleksi range outputs ----------
+['r1','r2'].forEach(id => {
+  const input = $(id), out = $(id + 'out');
+  input.addEventListener('input', () => out.textContent = input.value);
+});
+</script>
+</body>
+</html>
